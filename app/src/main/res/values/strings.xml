@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="txt_nomDepartement">Philo</string>
+    <string name="btn_suivant">Suivant</string>
+    <string name="btn_precedent">Précédent</string>
+    <string name="btn_voir">Infos</string>
+    <string name="btn_ajouter">Ajouter</string>
+    <string name="txt_departement">Département</string>
+    <string name="txt_numero">Numéro</string>
+</resources>
