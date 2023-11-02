@@ -15,14 +15,13 @@ import cstjean.mobile.ecole.travail.rapport.RapportTravaux;
 
 public class DetailsCoursActivity extends AppCompatActivity {
     private static final String EXTRA_INDEXCOURANT = "indexcourant";
-    private TextView txtDepartement;
-    private TextView txtNumero;
-    private TextView txtTravaux;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_cours);
+        int indexCourant = getIntent().getIntExtra(EXTRA_INDEXCOURANT, 0);
 
+/*
         txtDepartement = findViewById(R.id.txt_departement);
         txtNumero = findViewById(R.id.txt_numero);
         txtTravaux = findViewById(R.id.txt_travaux);
@@ -32,7 +31,7 @@ public class DetailsCoursActivity extends AppCompatActivity {
 
         txtDepartement.setText(coursSession.getDepartement());
         txtNumero.setText(coursSession.getNumero());
-        txtTravaux.setText(RapportTravaux.getRapportTravaux(coursSession));
+        txtTravaux.setText(RapportTravaux.getRapportTravaux(coursSession));*/
 
     }
 

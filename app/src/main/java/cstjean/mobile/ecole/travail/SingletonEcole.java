@@ -31,7 +31,7 @@ public class SingletonEcole {
 
     public int getNbCoursSession() { return listeCoursSession.size(); }
 
-    public CoursSession getCoursSession(int indexCourant) {
-        return listeCoursSession.get(indexCourant);
+    public static CoursSession getCoursSession(int indexCourant) {
+        return SingletonEcole.getInstance().listeCoursSession.get(indexCourant);
     }
 }

@@ -1,10 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.fragment.app.FragmentContainerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_container"
-    android:name="cstjean.mobile.ecole.ListeCoursFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cstjean.mobile.ecole.ListeCoursActivity"
-    tools:layout="@layout/activity_liste_cours" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="cstjean.mobile.ecole.ListeCoursActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_departement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nomDepartement"
+            tools:text="@string/txt_nomDepartement"
+            style="@style/texteAccent"/>
+        <ImageButton
+            android:id="@+id/btn_voir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_open_in_new_24"
+            android:contentDescription="@string/btn_voir" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle">
+            <ImageButton
+                android:id="@+id/btn_precedent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/baseline_chevron_left_24"
+                android:contentDescription="@string/btn_precedent" />
+            <ImageButton
+                android:id="@+id/btn_suivant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/baseline_chevron_right_24"
+                android:contentDescription="@string/btn_suivant" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btn_ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/baseline_add_circle_outline_24"
+            android:contentDescription="@+id/btn_ajouter" />
+    </LinearLayout>
+
+</LinearLayout>

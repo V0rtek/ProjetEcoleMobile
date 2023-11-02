@@ -45,7 +45,6 @@ public class AjouterCoursFragment extends Fragment {
         btnAjouter.setOnClickListener(v -> {
             CoursSession coursSession = new CoursSession(InputDepartement.getText().toString(),inputNum.getText().toString());
             SingletonEcole.getInstance().ajouter(coursSession);
-            // getActivity().finish();
             getActivity().finish();
         });
 

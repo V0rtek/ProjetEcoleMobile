@@ -17,8 +17,8 @@ public class AjouterCoursActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_ajouter_cours);
-/*
+        setContentView(R.layout.activity_ajouter_cours);
+        /*
         InputDepartement = findViewById(R.id.input_departement);
         inputNum = findViewById(R.id.input_numero);
         btnAjouter = findViewById(R.id.btn_ajouter);

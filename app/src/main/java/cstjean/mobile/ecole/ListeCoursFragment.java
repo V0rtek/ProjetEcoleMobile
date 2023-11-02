@@ -26,7 +26,7 @@ public class ListeCoursFragment extends Fragment {
     private ImageButton btnAjouter;
 
     public void updateDepartement() {
-        System.out.println("UPDATE");
+        Log.d("UPDATE","UPDATE");
         String departement =
                 SingletonEcole
                         .getInstance()
@@ -43,15 +43,18 @@ public class ListeCoursFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("ListeCoursFragment", "create");
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d("ListeCoursFragment", "createView");
+
         if (savedInstanceState != null) {
             indexCourant = savedInstanceState.getInt(KEY_INDEXCOURANT, 0);
         }
 
-        View view = inflater.inflate(R.layout.activity_liste_cours, container, false);
+        View view = inflater.inflate(R.layout.fragment_liste_cours, container, false);
 
         btnVoir = view.findViewById(R.id.btn_voir);
         btnPrecedent = view.findViewById(R.id.btn_precedent);

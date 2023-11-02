@@ -16,7 +16,7 @@ public class TestSingletonEcole {
     }
 
     @Test
-    public void testAjoutCoursSession() {
+    public void testAjout() {
         SingletonEcole singleton = SingletonEcole.getInstance();
         CoursSession coursSession = new CoursSession("vide", "000");
 

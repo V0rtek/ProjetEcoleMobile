@@ -17,7 +17,7 @@ public class ListeCoursActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_liste_cours);
+        setContentView(R.layout.activity_liste_cours);
         SingletonEcole.getInstance().getListeCoursSession().add(new CoursSession("Philo", "101"));
         SingletonEcole.getInstance().getListeCoursSession().add(new CoursSession("Philo", "210"));
         SingletonEcole.getInstance().getListeCoursSession().add(new CoursSession("Math", "101"));
