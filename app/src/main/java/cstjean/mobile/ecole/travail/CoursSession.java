@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.MissingFormatArgumentException;
+import java.util.Objects;
 import java.util.regex.PatternSyntaxException;
 
 /**
@@ -89,6 +90,18 @@ public class CoursSession implements Comparable<CoursSession> {
 
     public String getDepartementNumero() {
         return departement + " " + numero;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CoursSession that = (CoursSession) o;
+        return departement.equals(that.departement) && numero.equals(that.numero);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(departement, numero);
     }
 
     /**

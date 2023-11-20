@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="cstjean.mobile.ecole.ListeCoursActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cours"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <ImageButton
+        android:id="@+id/btn_ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/btn_ajouter"
+        app:srcCompat="@drawable/baseline_add_circle_outline_24" />
+</LinearLayout>
+<!-- ANCIENNE VERSION (AVANT RECYCLER VIEW)
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -64,3 +88,4 @@
     </LinearLayout>
 
 </LinearLayout>
+-->
